@@ -1,0 +1,28 @@
+#main-footer {
+  background-color: $medlight-color;
+
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    height: 5rem;
+    &::before {
+      content: none;
+    }
+
+    .social-links {
+      img {
+        height: 45px;
+        width: 45px;
+        transition: ease-in-out 0.5s;
+        margin-right: 1rem;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

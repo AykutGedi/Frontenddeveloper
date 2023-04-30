@@ -1,0 +1,49 @@
+#about {
+  &-1 {
+    .container::before {
+      content: none;
+    }
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1.5rem;
+
+      &__image {
+        border: 1px solid $medlight-color;
+        padding: 0.5rem;
+        border-radius: 25px;
+        // z-index: 2;
+      }
+
+      &__bio {
+        border: 1px solid $medlight-color;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  &-2 {
+    color: #020202;
+
+    h4 {
+      //   text-align: center;
+      margin: 5px 0px;
+    }
+    .progress {
+      height: 20px;
+      background-color: $medlight-color;
+      border-radius: 5px;
+      margin-bottom: 5px;
+
+      div {
+        height: 100%;
+        text-align: center;
+        background-color: $primary-color;
+      }
+    }
+
+    .container::before {
+      content: none;
+    }
+  }
+}
