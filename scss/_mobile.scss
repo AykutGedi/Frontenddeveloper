@@ -36,13 +36,19 @@
 
   #home__1 .skills,
   #home__2 .profile,
-  #home__3 .pro {
+  #home__3 .pro,
+  .items {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 //mobile
 @media (max-width: 576px) {
+  .lead {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    word-spacing: 1px;
+  }
   #header {
     &__home {
       height: 10rem;
@@ -78,8 +84,9 @@
   #home__1 .skills,
   #home__2 .profile,
   #home__3 .pro,
-  .items {
-    grid-template-columns: (1fr);
+  .items,
+  #contact-2 .contact-i {
+    grid-template-columns: (1fr) !important;
   }
 
   #main-footer {
@@ -98,6 +105,20 @@
     &-1 {
       .info {
         grid-template-columns: 1fr !important;
+      }
+    }
+  }
+
+  #contact {
+    &-1 {
+      .form-1 {
+        grid-template-areas:
+          "name"
+          "email"
+          "phone"
+          "subject"
+          "message"
+          "button" !important;
       }
     }
   }
